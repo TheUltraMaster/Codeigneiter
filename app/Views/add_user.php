@@ -23,7 +23,7 @@
     <form method="post" id="add_create" name="add_create" 
     action="<?= site_url('/submit-form') ?>">
       <div class="form-group">
-        <label>Name</label>
+        <label>Nombre</label>
         <input type="text" name="name" class="form-control">
       </div>
 
@@ -56,11 +56,11 @@
         },
         messages: {
           name: {
-            required: "Name is required.",
+            required: "Nombre es requerido.",
           },
           email: {
-            required: "Email is required.",
-            email: "It does not seem to be a valid email.",
+            required: "Email is requerido.",
+            email: "debe ingresar un email valido.",
             maxlength: "The email should be or equal to 60 chars.",
           },
         },
