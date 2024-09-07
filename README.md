@@ -1,8 +1,8 @@
 # CodeIgniter 4 Framework
+# composer install
+# cambiar la configuracion de la base de datos en Conf Database
+# Crear una base de datos y con una tabla 
+# crear el modelo de datos
+# practicar.
 
-[Codeigniter 4 CRUD with Bootstrap and MySQL Example](https://www.positronx.io/codeigniter-crud-with-bootstrap-and-mysql-example/).
 
-cambiar puerto
-php spark serve --port 8085
-
-php spark make:command Start
