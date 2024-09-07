@@ -5,49 +5,52 @@ use CodeIgniter\Controller;
 
 class UserCrud extends Controller
 {
-    // show users list
+   // muestra la lista de usuarios
     public function index(){
         $userModel = new UserModel();
         $data['users'] = $userModel->orderBy('id', 'DESC')->findAll();
         return view('user_view', $data);
     }
 
-    // add user form
+    // mueve al formulario crear
     public function create(){
         return view('add_user');
     }
  
-    // insert data
+ // insertar datos
     public function store() {
         $userModel = new UserModel();
         $data = [
-            'name' => $this->request->getVar('name'),
-            'email'  => $this->request->getVar('email'),
+            'nombre' => $this->request->getVar('nombre'),
+            'direccion'  => $this->request->getVar('direccion'),
+            'telefono'  => $this->request->getVar('telefono'),
         ];
         $userModel->insert($data);
         return $this->response->redirect(site_url('/users-list'));
     }
 
-    // show single user
+  //mostrar datos
     public function singleUser($id = null){
         $userModel = new UserModel();
         $data['user_obj'] = $userModel->where('id', $id)->first();
         return view('edit_view', $data);
     }
 
-    // update user data
+  //Actualizar datos
     public function update(){
         $userModel = new UserModel();
         $id = $this->request->getVar('id');
         $data = [
-            'name' => $this->request->getVar('name'),
-            'email'  => $this->request->getVar('email'),
+            'nombre' => $this->request->getVar('nombre'),
+            'direccion'  => $this->request->getVar('direccion'),
+            'telefono'  => $this->request->getVar('telefono'),
+            
         ];
         $userModel->update($id, $data);
         return $this->response->redirect(site_url('/users-list'));
     }
  
-    // delete user
+   //eliminar datos
     public function delete($id = null){
         $userModel = new UserModel();
         $data['user'] = $userModel->where('id', $id)->delete($id);

@@ -28,7 +28,8 @@
           <tr>
              <th> Id</th>
              <th>Nombre</th>
-             <th>Email</th>
+             <th>Direccion</th>
+             <th>Telefono</th>
              <th>Accion</th>
           </tr>
        </thead>
@@ -37,8 +38,10 @@
           <?php foreach($users as $user): ?>
           <tr>
              <td><?php echo $user['id']; ?></td>
-             <td><?php echo $user['name']; ?></td>
-             <td><?php echo $user['email']; ?></td>
+             <td><?php echo $user['nombre']; ?></td>
+             <td><?php echo $user['direccion']; ?></td>
+             <td><?php echo $user['telefono']; ?></td>
+
              <td>
               <a href="<?php echo base_url('edit-view/'.$user['id']);?>" class="btn btn-primary btn-sm">Edit</a>
               <a href="<?php echo base_url('delete/'.$user['id']);?>" class="btn btn-danger btn-sm">Delete</a>

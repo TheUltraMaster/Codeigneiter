@@ -1,0 +1,61 @@
+# Ignorar directorios de CodeIgniter
+writable/*
+!writable/.htaccess
+
+# Ignorar archivos de configuración sensibles
+.env
+.env.*
+
+# Ignorar dependencias de Composer
+/vendor/*
+/composer.lock
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de bases de datos locales
+*.sql
+*.sqlite
+
+# Ignorar configuraciones específicas del entorno
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
+nbproject/
+
+# Ignorar archivos del sistema operativo
+Thumbs.db
+.DS_Store
+
+# Ignorar archivos generados por SFTP y FTP
+*.exported
+*.lock
+
+# Ignorar archivos de paquetes
+*.zip
+*.tar.gz
+
+# Ignorar archivos de caché de PHPStorm
+.idea/
+
+# Ignorar archivos de caché de PHP
+phpunit.xml
+phpunit.xml.dist
+phpunit-result.cache
+
+# Ignorar archivos de sesiones y caché
+session.*
+cache/*
+!cache/index.html
+
+# Ignorar archivos de imágenes y subidas si las gestionas externamente
+public/uploads/*
+!public/uploads/.gitignore
+
+# Ignorar dependencias de Node.js (si usas Node.js para el frontend)
+node_modules/
+npm-debug.log
+
+# Ignorar resultados de pruebas y cobertura
+coverage/

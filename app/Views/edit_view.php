@@ -25,13 +25,18 @@
       <input type="hidden" name="id" id="id" value="<?php echo $user_obj['id']; ?>">
 
       <div class="form-group">
-        <label>Name</label>
-        <input type="text" name="name" class="form-control" value="<?php echo $user_obj['name']; ?>">
+        <label>Nombre</label>
+        <input type="text" name="nombre" class="form-control" value="<?php echo $user_obj['nombre']; ?>">
       </div>
 
       <div class="form-group">
-        <label>Email</label>
-        <input type="email" name="email" class="form-control" value="<?php echo $user_obj['email']; ?>">
+        <label>Direccion</label>
+        <input type="text" name="direccion" class="form-control" value="<?php echo $user_obj['direccion']; ?>">
+      </div>
+
+      <div class="form-group">
+        <label>Telefono</label>
+        <input type="text" name="telefono" class="form-control" value="<?php echo $user_obj['telefono']; ?>">
       </div>
 
       <div class="form-group">

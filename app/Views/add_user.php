@@ -24,12 +24,17 @@
     action="<?= site_url('/submit-form') ?>">
       <div class="form-group">
         <label>Nombre</label>
-        <input type="text" name="name" class="form-control">
+        <input type="text" name="nombre" class="form-control">
       </div>
 
       <div class="form-group">
-        <label>Email</label>
-        <input type="text" name="email" class="form-control">
+        <label>Direccion</label>
+        <input type="text" name="direccion" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label>Telefono</label>
+        <input type="text" name="telefono" class="form-control">
       </div>
 
       <div class="form-group">
