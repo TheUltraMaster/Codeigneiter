@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://localhost/crud/public/index.php/';
+    public string $baseURL = 'http://localhost/trabajitos/crudcodeigneiter4/public';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

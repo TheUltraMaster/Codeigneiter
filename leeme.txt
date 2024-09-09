@@ -1,0 +1,1 @@
+Para que el redireccionamiento funcione debe de cambiar su URL base a la carpeta pubic donde este alojado su proyecto
